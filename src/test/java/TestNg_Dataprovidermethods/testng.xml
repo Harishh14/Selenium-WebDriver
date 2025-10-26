@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+<!-- if want to run on seperate browser then you dont need to enter parallel key in the suite level-->
+    <test name="ChromeTest">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="TestNg_Dataprovidermethods.Dataprovider_Test"/>
+        </classes>
+    </test>
+
+   
+
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="TestNg_Dataprovidermethods.Dataprovider_Test"/>
+        </classes>
+    </test>
+
+</suite>
